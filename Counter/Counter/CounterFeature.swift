@@ -29,6 +29,8 @@ struct CounterFeature: Reducer {
     
     enum CancelId { case timer }
     
+    @Dependency(\.continuousClock) var clock
+    
     func reduce(into state: inout State, action: Action) -> ComposableArchitecture.Effect<Action> {
         switch action {
         case .decrementButtonTapped:
@@ -57,8 +59,7 @@ struct CounterFeature: Reducer {
             state.isTimerRunning.toggle()
             if state.isTimerRunning {
                 return .run { send in
-                    while true {
-                        try await Task.sleep(for: .seconds(1))
+                    for await _ in self.clock.timer(interval: .seconds(1)) {
                         await send(.timerTick)
                     }
                 }
@@ -77,3 +78,4 @@ struct CounterFeature: Reducer {
 }
 
 extension CounterFeature.State: Equatable { }
+extension CounterFeature.Action: Equatable { }
