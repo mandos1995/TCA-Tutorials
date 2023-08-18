@@ -7,11 +7,17 @@
 
 import SwiftUI
 
+import ComposableArchitecture
+
 @main
 struct ContactsApp: App {
+    static let store = Store(initialState: ContactsFeature.State()) {
+        ContactsFeature()
+            ._printChanges()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContactsView(store: ContactsApp.store)
         }
     }
 }
