@@ -9,7 +9,7 @@ import ComposableArchitecture
 
 @Reducer
 struct CounterFeature {
-    struct State {
+    struct State: Equatable {
         var count = 0
     }
     
@@ -22,10 +22,10 @@ struct CounterFeature {
         Reduce { state, action in
             switch action {
             case .decrementButtonTapped:
-                state.count += 1
+                state.count -= 1
                 return .none
             case .incrementButtonTapped:
-                state.count -= 1
+                state.count += 1
                 return .none
             }
             
