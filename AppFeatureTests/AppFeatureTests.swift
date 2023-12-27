@@ -11,6 +11,7 @@ import ComposableArchitecture
 
 @testable import TCA_Tutorial
 
+@MainActor
 final class AppFeatureTests: XCTestCase {
     func testIncrementInFirstTab() async {
         let store = TestStore(initialState: AppFeature.State()) {
