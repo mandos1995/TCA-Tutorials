@@ -17,6 +17,8 @@
 		EEEA07922B32B6C8004D6CE8 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07912B32B6C8004D6CE8 /* CounterFeatureTests.swift */; };
 		EEEA079E2B33CADF004D6CE8 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA079D2B33CADF004D6CE8 /* NumberFactClient.swift */; };
 		EEEA07A12B33D0A1004D6CE8 /* DependencyValues + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07A02B33D0A1004D6CE8 /* DependencyValues + Extension.swift */; };
+		EEEA07A42B33D6E3004D6CE8 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07A32B33D6E3004D6CE8 /* AppFeature.swift */; };
+		EEEA07A62B33D6FC004D6CE8 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07A52B33D6FC004D6CE8 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		EEEA07912B32B6C8004D6CE8 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 		EEEA079D2B33CADF004D6CE8 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		EEEA07A02B33D0A1004D6CE8 /* DependencyValues + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyValues + Extension.swift"; sourceTree = "<group>"; };
+		EEEA07A32B33D6E3004D6CE8 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		EEEA07A52B33D6FC004D6CE8 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		EEEA07732B32755E004D6CE8 /* TCA_Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				EEEA07A22B33D68F004D6CE8 /* App */,
 				EEEA079F2B33D086004D6CE8 /* Utils */,
 				EEEA07852B32797F004D6CE8 /* Counter */,
 				EEEA07742B32755E004D6CE8 /* TCA_TutorialApp.swift */,
@@ -125,6 +130,15 @@
 				EEEA07A02B33D0A1004D6CE8 /* DependencyValues + Extension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EEEA07A22B33D68F004D6CE8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA07A32B33D6E3004D6CE8 /* AppFeature.swift */,
+				EEEA07A52B33D6FC004D6CE8 /* AppView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +251,9 @@
 				EEEA07872B327995004D6CE8 /* CounterFeature.swift in Sources */,
 				EEEA07A12B33D0A1004D6CE8 /* DependencyValues + Extension.swift in Sources */,
 				EEEA07772B32755E004D6CE8 /* ContentView.swift in Sources */,
+				EEEA07A62B33D6FC004D6CE8 /* AppView.swift in Sources */,
 				EEEA07752B32755E004D6CE8 /* TCA_TutorialApp.swift in Sources */,
+				EEEA07A42B33D6E3004D6CE8 /* AppFeature.swift in Sources */,
 				EEEA07892B32817E004D6CE8 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
