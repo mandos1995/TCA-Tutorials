@@ -24,6 +24,7 @@ struct AppView: View {
                     Text("Counter 2")
                 }
         }
+        .navigationTitle("Counter")
     }
 }
 

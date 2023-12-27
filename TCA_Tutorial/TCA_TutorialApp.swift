@@ -15,9 +15,21 @@ struct TCA_TutorialApp: App {
         AppFeature()
             ._printChanges()
     }
+    
+    let contactStore = Store(initialState: ContactsFeature.State()) {
+        ContactsFeature()
+            ._printChanges()
+    }
     var body: some Scene {
         WindowGroup {
-            AppView(store: store)
+            NavigationStack {
+                NavigationLink(destination: AppView(store: store)) {
+                    Text("Counter")
+                }
+                NavigationLink(destination: ContactsView(store: contactStore)) {
+                    Text("Contact")
+                }
+            }
         }
     }
 }
