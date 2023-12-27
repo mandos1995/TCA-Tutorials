@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE9F52162B3BB98500097FBA /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F52152B3BB98500097FBA /* AppFeatureTests.swift */; };
 		EEEA07752B32755E004D6CE8 /* TCA_TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07742B32755E004D6CE8 /* TCA_TutorialApp.swift */; };
 		EEEA07772B32755E004D6CE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07762B32755E004D6CE8 /* ContentView.swift */; };
 		EEEA07792B327560004D6CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEA07782B327560004D6CE8 /* Assets.xcassets */; };
@@ -22,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EE9F52172B3BB98500097FBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEEA07692B32755E004D6CE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEEA07702B32755E004D6CE8;
+			remoteInfo = TCA_Tutorial;
+		};
 		EEEA07932B32B6C8004D6CE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EEEA07692B32755E004D6CE8 /* Project object */;
@@ -32,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE9F52132B3BB98500097FBA /* AppFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9F52152B3BB98500097FBA /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
 		EEEA07712B32755E004D6CE8 /* TCA_Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA_Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA07742B32755E004D6CE8 /* TCA_TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA_TutorialApp.swift; sourceTree = "<group>"; };
 		EEEA07762B32755E004D6CE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EE9F52102B3BB98500097FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEEA076E2B32755E004D6CE8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,11 +83,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE9F52142B3BB98500097FBA /* AppFeatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F52152B3BB98500097FBA /* AppFeatureTests.swift */,
+			);
+			path = AppFeatureTests;
+			sourceTree = "<group>";
+		};
 		EEEA07682B32755E004D6CE8 = {
 			isa = PBXGroup;
 			children = (
 				EEEA07732B32755E004D6CE8 /* TCA_Tutorial */,
 				EEEA07902B32B6C8004D6CE8 /* CounterFeatureTests */,
+				EE9F52142B3BB98500097FBA /* AppFeatureTests */,
 				EEEA07722B32755E004D6CE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +106,7 @@
 			children = (
 				EEEA07712B32755E004D6CE8 /* TCA_Tutorial.app */,
 				EEEA078F2B32B6C8004D6CE8 /* CounterFeatureTests.xctest */,
+				EE9F52132B3BB98500097FBA /* AppFeatureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +171,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EE9F52122B3BB98500097FBA /* AppFeatureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9F521B2B3BB98500097FBA /* Build configuration list for PBXNativeTarget "AppFeatureTests" */;
+			buildPhases = (
+				EE9F520F2B3BB98500097FBA /* Sources */,
+				EE9F52102B3BB98500097FBA /* Frameworks */,
+				EE9F52112B3BB98500097FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE9F52182B3BB98500097FBA /* PBXTargetDependency */,
+			);
+			name = AppFeatureTests;
+			productName = AppFeatureTests;
+			productReference = EE9F52132B3BB98500097FBA /* AppFeatureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EEEA07702B32755E004D6CE8 /* TCA_Tutorial */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEEA077F2B327560004D6CE8 /* Build configuration list for PBXNativeTarget "TCA_Tutorial" */;
@@ -192,6 +237,10 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					EE9F52122B3BB98500097FBA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = EEEA07702B32755E004D6CE8;
+					};
 					EEEA07702B32755E004D6CE8 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -219,11 +268,19 @@
 			targets = (
 				EEEA07702B32755E004D6CE8 /* TCA_Tutorial */,
 				EEEA078E2B32B6C8004D6CE8 /* CounterFeatureTests */,
+				EE9F52122B3BB98500097FBA /* AppFeatureTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EE9F52112B3BB98500097FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEEA076F2B32755E004D6CE8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +300,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EE9F520F2B3BB98500097FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9F52162B3BB98500097FBA /* AppFeatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEEA076D2B32755E004D6CE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +334,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EE9F52182B3BB98500097FBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEEA07702B32755E004D6CE8 /* TCA_Tutorial */;
+			targetProxy = EE9F52172B3BB98500097FBA /* PBXContainerItemProxy */;
+		};
 		EEEA07942B32B6C8004D6CE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EEEA07702B32755E004D6CE8 /* TCA_Tutorial */;
@@ -277,6 +347,50 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		EE9F52192B3BB98500097FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2N9KXXP3M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandos.AppFeatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCA_Tutorial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCA_Tutorial";
+			};
+			name = Debug;
+		};
+		EE9F521A2B3BB98500097FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2N9KXXP3M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandos.AppFeatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCA_Tutorial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCA_Tutorial";
+			};
+			name = Release;
+		};
 		EEEA077D2B327560004D6CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,6 +617,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EE9F521B2B3BB98500097FBA /* Build configuration list for PBXNativeTarget "AppFeatureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9F52192B3BB98500097FBA /* Debug */,
+				EE9F521A2B3BB98500097FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EEEA076C2B32755E004D6CE8 /* Build configuration list for PBXProject "TCA_Tutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
