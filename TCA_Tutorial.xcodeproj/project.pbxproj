@@ -10,6 +10,8 @@
 		EE9F52162B3BB98500097FBA /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F52152B3BB98500097FBA /* AppFeatureTests.swift */; };
 		EE9F521E2B3BBFB600097FBA /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F521D2B3BBFB600097FBA /* ContactsFeature.swift */; };
 		EE9F52202B3BC22200097FBA /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F521F2B3BC22200097FBA /* ContactsView.swift */; };
+		EE9F52222B3BC98500097FBA /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F52212B3BC98500097FBA /* AddContactFeature.swift */; };
+		EE9F52242B3BCB3400097FBA /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F52232B3BCB3400097FBA /* AddContactView.swift */; };
 		EEEA07752B32755E004D6CE8 /* TCA_TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07742B32755E004D6CE8 /* TCA_TutorialApp.swift */; };
 		EEEA07792B327560004D6CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEA07782B327560004D6CE8 /* Assets.xcassets */; };
 		EEEA077C2B327560004D6CE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEA077B2B327560004D6CE8 /* Preview Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		EE9F52152B3BB98500097FBA /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
 		EE9F521D2B3BBFB600097FBA /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
 		EE9F521F2B3BC22200097FBA /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		EE9F52212B3BC98500097FBA /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
+		EE9F52232B3BCB3400097FBA /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		EEEA07712B32755E004D6CE8 /* TCA_Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA_Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA07742B32755E004D6CE8 /* TCA_TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA_TutorialApp.swift; sourceTree = "<group>"; };
 		EEEA07782B327560004D6CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			children = (
 				EE9F521D2B3BBFB600097FBA /* ContactsFeature.swift */,
 				EE9F521F2B3BC22200097FBA /* ContactsView.swift */,
+				EE9F52212B3BC98500097FBA /* AddContactFeature.swift */,
+				EE9F52232B3BCB3400097FBA /* AddContactView.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -324,8 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEEA079E2B33CADF004D6CE8 /* NumberFactClient.swift in Sources */,
+				EE9F52222B3BC98500097FBA /* AddContactFeature.swift in Sources */,
 				EEEA07872B327995004D6CE8 /* CounterFeature.swift in Sources */,
 				EEEA07A12B33D0A1004D6CE8 /* DependencyValues + Extension.swift in Sources */,
+				EE9F52242B3BCB3400097FBA /* AddContactView.swift in Sources */,
 				EE9F521E2B3BBFB600097FBA /* ContactsFeature.swift in Sources */,
 				EEEA07A62B33D6FC004D6CE8 /* AppView.swift in Sources */,
 				EEEA07752B32755E004D6CE8 /* TCA_TutorialApp.swift in Sources */,
