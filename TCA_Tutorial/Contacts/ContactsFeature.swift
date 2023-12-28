@@ -18,12 +18,19 @@ struct Contact: Equatable, Identifiable {
 struct ContactsFeature {
     struct State: Equatable {
         @PresentationState var addContact: AddContactFeature.State?
+        @PresentationState var alert: AlertState<Action.Alert>?
         var contacts: IdentifiedArrayOf<Contact> = []
     }
     
     enum Action {
         case addButtonTapped
         case addContact(PresentationAction<AddContactFeature.Action>)
+        case deleteButtonTapped(id: Contact.ID)
+        case alert(PresentationAction<Alert>)
+        
+        enum Alert: Equatable {
+            case confirmDeletion(id: Contact.ID)
+        }
     }
     
     var body: some ReducerOf<Self> {
@@ -39,6 +46,23 @@ struct ContactsFeature {
                 state.contacts.append(contact)
                 return .none
                 
+            case .deleteButtonTapped(let id):
+                state.alert = AlertState {
+                    TextState("Are you sure")
+                } actions: {
+                    ButtonState(
+                        role: .destructive, action: .confirmDeletion(id: id)) {
+                            TextState("Delete")
+                    }
+                }
+                return .none
+                
+            case .alert(.presented(.confirmDeletion(let id))):
+                state.contacts.remove(id: id)
+                return .none
+                
+            case .alert:
+                return .none
                 
             case .addContact:
                 return .none
@@ -47,5 +71,6 @@ struct ContactsFeature {
         .ifLet(\.$addContact, action: \.addContact) {
             AddContactFeature()
         }
+        .ifLet(\.$alert, action: \.alert)
     }
 }
