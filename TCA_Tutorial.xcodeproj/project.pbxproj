@@ -24,6 +24,8 @@
 		EEEA07A12B33D0A1004D6CE8 /* DependencyValues + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07A02B33D0A1004D6CE8 /* DependencyValues + Extension.swift */; };
 		EEEA07A42B33D6E3004D6CE8 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07A32B33D6E3004D6CE8 /* AppFeature.swift */; };
 		EEEA07A62B33D6FC004D6CE8 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA07A52B33D6FC004D6CE8 /* AppView.swift */; };
+		EEFC58F82B43911C00CD3AF2 /* ContactDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC58F72B43911C00CD3AF2 /* ContactDetailFeature.swift */; };
+		EEFC58FA2B43917200CD3AF2 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC58F92B43917200CD3AF2 /* ContactDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		EEEA07A02B33D0A1004D6CE8 /* DependencyValues + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyValues + Extension.swift"; sourceTree = "<group>"; };
 		EEEA07A32B33D6E3004D6CE8 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		EEEA07A52B33D6FC004D6CE8 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		EEFC58F72B43911C00CD3AF2 /* ContactDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailFeature.swift; sourceTree = "<group>"; };
+		EEFC58F92B43917200CD3AF2 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				EE9F521F2B3BC22200097FBA /* ContactsView.swift */,
 				EE9F52212B3BC98500097FBA /* AddContactFeature.swift */,
 				EE9F52232B3BCB3400097FBA /* AddContactView.swift */,
+				EEFC58F72B43911C00CD3AF2 /* ContactDetailFeature.swift */,
+				EEFC58F92B43917200CD3AF2 /* ContactDetailView.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -398,6 +404,8 @@
 				EE9F52222B3BC98500097FBA /* AddContactFeature.swift in Sources */,
 				EEEA07872B327995004D6CE8 /* CounterFeature.swift in Sources */,
 				EEEA07A12B33D0A1004D6CE8 /* DependencyValues + Extension.swift in Sources */,
+				EEFC58F82B43911C00CD3AF2 /* ContactDetailFeature.swift in Sources */,
+				EEFC58FA2B43917200CD3AF2 /* ContactDetailView.swift in Sources */,
 				EE9F52242B3BCB3400097FBA /* AddContactView.swift in Sources */,
 				EE9F521E2B3BBFB600097FBA /* ContactsFeature.swift in Sources */,
 				EEEA07A62B33D6FC004D6CE8 /* AppView.swift in Sources */,

@@ -22,14 +22,7 @@ struct TCA_TutorialApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                NavigationLink(destination: AppView(store: store)) {
-                    Text("Counter")
-                }
-                NavigationLink(destination: ContactsView(store: contactStore)) {
-                    Text("Contact")
-                }
-            }
+            ContactsView(store: contactStore)
         }
     }
 }
